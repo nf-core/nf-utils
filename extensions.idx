@@ -1,0 +1,6 @@
+nfcore.utils.functions.References
+nfcore.utils.functions.NfCorePipeline
+nfcore.utils.functions.NfValidation
+nfcore.utils.functions.NextflowPipeline
+nfcore.utils.functions.NfSchema
+nfcore.utils.config.UtilsPluginConfig 

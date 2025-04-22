@@ -1,0 +1,44 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/nf-core/references/master/assets/schema_asset.json",
+    "title": "nf-core/references pipeline - params.asset schema",
+    "description": "Schema for the file provided with params.asset",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "genome": {
+                "meta": ["genome", "id"],
+                "type": "string",
+                "pattern": "^\\S+$",
+                "errorMessage": "Genome name must be provided, cannot contain spaces"
+            },
+            "site": {
+                "meta": ["site"],
+                "type": "string",
+                "pattern": "^\\S+$",
+                "default": "unknown",
+                "errorMessage": "Website of origin of the reference, cannot contain spaces"
+            },
+            "source": {
+                "meta": ["source"],
+                "type": "string",
+                "pattern": "^\\S+$",
+                "errorMessage": "Source of genome must be provided, cannot contain spaces"
+            },
+            "source_version": {
+                "meta": ["source_version"],
+                "type": "string",
+                "pattern": "^\\S+$",
+                "default": "unknown",
+                "errorMessage": "Source version used to create annotation files (gff/gtf related files), cannot contain spaces"
+            },
+            "species": {
+                "meta": ["species"],
+                "type": "string",
+                "pattern": "^\\S+$",
+                "errorMessage": "Species of the reference, cannot contain spaces"
+            }
+        }
+    }
+} 

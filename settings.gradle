@@ -1,1 +1,9 @@
-rootProject.name = 'nf-hello'
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        // Add mavenLocal() if testing with a local version of the plugin
+        // mavenLocal()
+    }
+}
+
+rootProject.name = 'nf-utils'
